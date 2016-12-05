@@ -15,7 +15,7 @@ class RoverImageCell: UICollectionViewCell {
     //MARK: Outlets
     //-----------------------
     @IBOutlet weak var imageView: UIImageView!
-    
+
     //-----------------------
     //MARK: Functions
     //-----------------------
@@ -23,7 +23,10 @@ class RoverImageCell: UICollectionViewCell {
     //Configure each cell with image loaded using nuke
     func configureCell(with image: RoverImage) {
         
-        self.layer.cornerRadius = 10
+        self.layer.cornerRadius = 7
+        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.borderWidth = 2.5
+        self.layer.masksToBounds = true
         
         if let url = image.imageUrl {
             

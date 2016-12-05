@@ -17,12 +17,18 @@ class RoverImageViewController: UICollectionViewController {
     var roverImages: [RoverImage]?
 
     //-----------------------
+    //MARK: Properties
+    //-----------------------
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    //-----------------------
     //MARK: View
     //-----------------------
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fethcRoverImages()
+        fetchRoverImages()
+        
     }
     
     //-----------------------
@@ -30,7 +36,9 @@ class RoverImageViewController: UICollectionViewController {
     //-----------------------
     
     //Fetch rover images from NASA API
-    func fethcRoverImages() {
+    func fetchRoverImages() {
+        
+        activityIndicator.startAnimating()
         
         nasaClient.fetchRoverImages { result in
             
@@ -38,12 +46,14 @@ class RoverImageViewController: UICollectionViewController {
                 
             case .Success(let images):
                 
-                print(images)
+                self.activityIndicator.stopAnimating()
                 
                 self.roverImages = images
                 self.collectionView?.reloadData()
                 
             case .Failure(let error):
+                
+                self.activityIndicator.stopAnimating()
                 print(error.localizedDescription)
                 
             }
@@ -55,7 +65,7 @@ class RoverImageViewController: UICollectionViewController {
     //-----------------------
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "" {
+        if segue.identifier == "showRoverDetail" {
             
             let roverDetailVc = segue.destination as! RoverDetailViewController
             

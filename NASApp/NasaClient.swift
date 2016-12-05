@@ -70,8 +70,6 @@ final class NasaClient: APIClient {
         
         guard let url = ImageDatabase.curiosityImages.createUrl(with: nil) else { return }
         
-        print(url)
-        
         let request = URLRequest(url: url)
         
         fetch(request: request, parse: { json -> [RoverImage]? in
