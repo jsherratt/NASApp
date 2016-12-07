@@ -2,8 +2,8 @@
 //  Geocoder.swift
 //  NASApp
 //
-//  Created by Dennis Parussini on 20-11-16.
-//  Copyright © 2016 Dennis Parussini. All rights reserved.
+//  Created by Joey on 07/12/2016.
+//  Copyright © 2016 Joe Sherratt. All rights reserved.
 //
 
 import Foundation
