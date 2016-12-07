@@ -1,9 +1,9 @@
 //
-//  FactProvider.swift
-//  FunFacts
+//  SpaceImageProvider.swift
+//  NASApp
 //
-//  Created by Screencast on 11/2/16.
-//  Copyright © 2016 Treehouse Island. All rights reserved.
+//  Created by Joey on 07/12/2016.
+//  Copyright © 2016 Joe Sherratt. All rights reserved.
 //
 
 import GameKit
