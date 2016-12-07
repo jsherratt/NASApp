@@ -40,6 +40,7 @@ class MainViewController: UIViewController {
         //Add notification observer to show earth image alert
         NotificationCenter.default.addObserver(self, selector: #selector(noEarthImageAlert), name: NSNotification.Name(rawValue: "EarthImageAlert"), object: nil)
         
+        //Configure view
         configureView()
     }
     
