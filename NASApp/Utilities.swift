@@ -24,5 +24,12 @@ extension UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func delay(seconds delay: Double, completion: @escaping ()->()) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            completion()
+        }
+    }
 }
 

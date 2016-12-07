@@ -16,6 +16,12 @@
 		D43C985A1DEF444F001E6204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D43C98591DEF444F001E6204 /* Assets.xcassets */; };
 		D43C985D1DEF444F001E6204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43C985B1DEF444F001E6204 /* LaunchScreen.storyboard */; };
 		D43C98681DEF444F001E6204 /* NASAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C98671DEF444F001E6204 /* NASAppTests.swift */; };
+		D4B559A71DF8459500EAB6EA /* EarthImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B559A61DF8459500EAB6EA /* EarthImage.swift */; };
+		D4B559A91DF856F300EAB6EA /* EarthImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B559A81DF856F300EAB6EA /* EarthImageViewController.swift */; };
+		D4B559AC1DF857C900EAB6EA /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B559AB1DF857C900EAB6EA /* Geocoder.swift */; };
+		D4B559AE1DF85D4500EAB6EA /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B559AD1DF85D4500EAB6EA /* ContactManager.swift */; };
+		D4B559B01DF86E1D00EAB6EA /* GSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B559AF1DF86E1D00EAB6EA /* GSMessage.swift */; };
+		D4B559B31DF8741600EAB6EA /* SpaceImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B559B21DF8741600EAB6EA /* SpaceImageProvider.swift */; };
 		D4C101A01DF5DF3E007BA91B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1019F1DF5DF3E007BA91B /* Utilities.swift */; };
 		D4F0FF4E1DF465E400498218 /* RoverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F0FF4D1DF465E400498218 /* RoverDetailViewController.swift */; };
 		D4F0FF511DF4664D00498218 /* RoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F0FF501DF4664D00498218 /* RoverImage.swift */; };
@@ -51,6 +57,12 @@
 		D43C98631DEF444F001E6204 /* NASAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43C98671DEF444F001E6204 /* NASAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAppTests.swift; sourceTree = "<group>"; };
 		D43C98691DEF444F001E6204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4B559A61DF8459500EAB6EA /* EarthImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthImage.swift; sourceTree = "<group>"; };
+		D4B559A81DF856F300EAB6EA /* EarthImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthImageViewController.swift; sourceTree = "<group>"; };
+		D4B559AB1DF857C900EAB6EA /* Geocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
+		D4B559AD1DF85D4500EAB6EA /* ContactManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		D4B559AF1DF86E1D00EAB6EA /* GSMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSMessage.swift; sourceTree = "<group>"; };
+		D4B559B21DF8741600EAB6EA /* SpaceImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceImageProvider.swift; sourceTree = "<group>"; };
 		D4C1019F1DF5DF3E007BA91B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D4F0FF4D1DF465E400498218 /* RoverDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverDetailViewController.swift; sourceTree = "<group>"; };
 		D4F0FF501DF4664D00498218 /* RoverImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverImage.swift; sourceTree = "<group>"; };
@@ -126,9 +138,11 @@
 				D43C98521DEF444F001E6204 /* AppDelegate.swift */,
 				D43C98541DEF444F001E6204 /* MainViewController.swift */,
 				D4C1019F1DF5DF3E007BA91B /* Utilities.swift */,
+				D4B559AA1DF856F700EAB6EA /* Earth */,
 				D4F0FF4F1DF465ED00498218 /* Rover */,
 				D4F0FF521DF4665200498218 /* Models */,
 				D4F0FF571DF467AD00498218 /* API Client */,
+				D4B559B11DF86E2600EAB6EA /* 3rd Party */,
 				D43C98561DEF444F001E6204 /* Main.storyboard */,
 				D43C98591DEF444F001E6204 /* Assets.xcassets */,
 				D4DFAB801DF0808D00DBA5FF /* SupportingFiles */,
@@ -143,6 +157,22 @@
 				D43C98691DEF444F001E6204 /* Info.plist */,
 			);
 			path = NASAppTests;
+			sourceTree = "<group>";
+		};
+		D4B559AA1DF856F700EAB6EA /* Earth */ = {
+			isa = PBXGroup;
+			children = (
+				D4B559A81DF856F300EAB6EA /* EarthImageViewController.swift */,
+			);
+			name = Earth;
+			sourceTree = "<group>";
+		};
+		D4B559B11DF86E2600EAB6EA /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				D4B559AF1DF86E1D00EAB6EA /* GSMessage.swift */,
+			);
+			name = "3rd Party";
 			sourceTree = "<group>";
 		};
 		D4DFAB801DF0808D00DBA5FF /* SupportingFiles */ = {
@@ -168,6 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				D4F0FF501DF4664D00498218 /* RoverImage.swift */,
+				D4B559A61DF8459500EAB6EA /* EarthImage.swift */,
+				D4B559AB1DF857C900EAB6EA /* Geocoder.swift */,
+				D4B559AD1DF85D4500EAB6EA /* ContactManager.swift */,
+				D4B559B21DF8741600EAB6EA /* SpaceImageProvider.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -385,15 +419,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B559AE1DF85D4500EAB6EA /* ContactManager.swift in Sources */,
 				D4F0FF591DF4745000498218 /* RoverImageCell.swift in Sources */,
+				D4B559AC1DF857C900EAB6EA /* Geocoder.swift in Sources */,
 				D4F0FF561DF467A000498218 /* NasaClient.swift in Sources */,
 				D40985FC1DF46505007FD9BB /* RoverImageViewController.swift in Sources */,
 				D4F0FF4E1DF465E400498218 /* RoverDetailViewController.swift in Sources */,
 				D43C98551DEF444F001E6204 /* MainViewController.swift in Sources */,
 				D4F0FF511DF4664D00498218 /* RoverImage.swift in Sources */,
+				D4B559A71DF8459500EAB6EA /* EarthImage.swift in Sources */,
 				D4C101A01DF5DF3E007BA91B /* Utilities.swift in Sources */,
+				D4B559A91DF856F300EAB6EA /* EarthImageViewController.swift in Sources */,
 				D43C98531DEF444F001E6204 /* AppDelegate.swift in Sources */,
 				D4F0FF551DF467A000498218 /* APIClient.swift in Sources */,
+				D4B559B01DF86E1D00EAB6EA /* GSMessage.swift in Sources */,
+				D4B559B31DF8741600EAB6EA /* SpaceImageProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

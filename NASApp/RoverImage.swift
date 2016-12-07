@@ -26,8 +26,8 @@ struct RoverImage: Image {
     
     init?(json: [String : Any]) {
         
-        guard let imageString = json["img_src"] as? String else { return nil }
+        guard let imageUrl = json["img_src"] as? String else { return nil }
         
-        self.imageUrl = URL(string: imageString)
+        self.imageUrl = URL(string: imageUrl)
     }
 }
