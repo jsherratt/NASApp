@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Contacts
 
 //-----------------------
 //MARK: Enums
@@ -39,7 +38,7 @@ enum ImageDatabase: Endpoint {
             
             guard let params = parameters, let latitude = params["latitude"] as? Double, let longitude = params["longitude"] as? Double else { return nil }
             
-            return URL(string: baseURL + "planetary/earth/imagery?lat=\(latitude)&lon=\(longitude)&api_key=\(apiKey)")
+            return URL(string: baseURL + "planetary/earth/imagery?api_key=\(apiKey)&lat=\(latitude)&lon=\(longitude)")
         }
     }
 }
@@ -48,9 +47,6 @@ enum ImageDatabase: Endpoint {
 //MARK: Classes
 //-----------------------
 final class NasaClient: APIClient {
-    
-    let geoCoder = Geocoder()
-    let contactManager = ContactManager()
     
     let configuration: URLSessionConfiguration
     lazy var session: URLSession = {
@@ -90,49 +86,6 @@ final class NasaClient: APIClient {
             }
             
             }, completion: completion)
-    }
-    
-    //Fetch earth image for address
-    func fetchEarthImage(for address: String, completion: @escaping (APIResult<EarthImage>) -> Void) {
-        
-        geoCoder.geocodeAddress(for: address) { location, error in
-         
-            guard let location = location else { return }
-            
-            guard let url = ImageDatabase.earth.createUrl(with: ["latitude": location.coordinate.latitude, "longitude": location.coordinate.longitude]) else { return }
-            
-            let request = URLRequest(url: url)
-            
-            self.fetch(request: request, parse: { json -> EarthImage? in
-                
-                let imageDict = json
-                
-                return EarthImage(json: imageDict)
-                
-            }, completion: completion)
-            
-        }
-    }
-    
-    //Fetch earth image for contact
-    func fetchEarthImage(for contact: CNContact, completion: @escaping (APIResult<EarthImage>) -> Void) {
-        
-        contactManager.searchLocation(for: contact, completion: { location, error in
-            
-            guard let location = location else { NotificationCenter.default.post(name: NSNotification.Name(rawValue: "EarthImageAlert"), object: nil); return }
-                        
-            guard let url = ImageDatabase.earth.createUrl(with: ["latitude": location.coordinate.latitude, "longitude": location.coordinate.longitude]) else { return }
-            
-            let request = URLRequest(url: url)
-            
-            self.fetch(request: request, parse: { json -> EarthImage? in
-                
-                let imageDict = json
-                
-                return EarthImage(json: imageDict)
-                
-            }, completion: completion)
-        })
     }
 
 }

@@ -19,149 +19,48 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWv-sC-8xJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                <subviews>
-                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-oi-dB4">
-                                        <rect key="frame" x="142" y="80" width="37" height="37"/>
-                                    </activityIndicatorView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktn-ez-Gu8">
-                                        <rect key="frame" x="73" y="172" width="175" height="45"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="G7t-eK-44O"/>
-                                            <constraint firstAttribute="width" constant="175" id="XhE-fp-LSC"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Create Rover Postcard">
-                                            <color key="titleColor" red="0.08235294118" green="0.1137254902" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="U4g-r3-PHb" kind="show" id="tjM-sx-CvU"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Space1" translatesAutoresizingMaskIntoConstraints="NO" id="sgh-6r-blx">
-                                        <rect key="frame" x="25" y="411" width="270" height="400"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="400" id="Ehs-eM-OiG"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Pioneer the future in space exploration&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JR9-SL-r2O">
-                                        <rect key="frame" x="14" y="383" width="293" height="20"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NASApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zol-VP-RSV">
-                                        <rect key="frame" x="113.5" y="20" width="94.5" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2s-95-oON">
-                                        <rect key="frame" x="100" y="247" width="120" height="45"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="5qt-xN-fhB"/>
-                                            <constraint firstAttribute="width" constant="120" id="zMJ-yR-WsW"/>
-                                        </constraints>
-                                        <state key="normal" title="Eye In the Sky">
-                                            <color key="titleColor" red="0.08235294118" green="0.1137254902" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="earthImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwx-Pq-4EF"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2s-95-oON">
+                                <rect key="frame" x="112" y="348" width="97" height="30"/>
                                 <constraints>
-                                    <constraint firstItem="JR9-SL-r2O" firstAttribute="leading" secondItem="MWv-sC-8xJ" secondAttribute="leading" constant="14" id="3hh-3z-hXT"/>
-                                    <constraint firstItem="q2s-95-oON" firstAttribute="centerX" secondItem="MWv-sC-8xJ" secondAttribute="centerX" id="6t0-9R-0Ee"/>
-                                    <constraint firstItem="sgh-6r-blx" firstAttribute="top" secondItem="JR9-SL-r2O" secondAttribute="bottom" constant="8" id="AJW-dp-eVh"/>
-                                    <constraint firstItem="g7b-oi-dB4" firstAttribute="top" secondItem="MWv-sC-8xJ" secondAttribute="top" constant="80" id="CJ6-Ce-TNC"/>
-                                    <constraint firstItem="sgh-6r-blx" firstAttribute="centerX" secondItem="q2s-95-oON" secondAttribute="centerX" id="Cwf-RJ-9AP"/>
-                                    <constraint firstItem="sgh-6r-blx" firstAttribute="leading" secondItem="MWv-sC-8xJ" secondAttribute="leading" constant="25" id="CzB-6V-uvi"/>
-                                    <constraint firstItem="sgh-6r-blx" firstAttribute="top" secondItem="zol-VP-RSV" secondAttribute="bottom" constant="362" id="DvB-Ip-7Cb"/>
-                                    <constraint firstItem="Ktn-ez-Gu8" firstAttribute="top" secondItem="g7b-oi-dB4" secondAttribute="bottom" constant="55" id="IfP-qe-cJz"/>
-                                    <constraint firstAttribute="trailing" secondItem="JR9-SL-r2O" secondAttribute="trailing" constant="13" id="MGv-p8-oP8"/>
-                                    <constraint firstItem="zol-VP-RSV" firstAttribute="centerX" secondItem="MWv-sC-8xJ" secondAttribute="centerX" id="WXp-dS-52I"/>
-                                    <constraint firstItem="q2s-95-oON" firstAttribute="top" secondItem="Ktn-ez-Gu8" secondAttribute="bottom" constant="30" id="ZV1-lS-kNe"/>
-                                    <constraint firstItem="zol-VP-RSV" firstAttribute="top" secondItem="MWv-sC-8xJ" secondAttribute="top" constant="20" id="aFN-qe-kmN"/>
-                                    <constraint firstItem="Ktn-ez-Gu8" firstAttribute="centerX" secondItem="MWv-sC-8xJ" secondAttribute="centerX" id="daC-jI-WMf"/>
-                                    <constraint firstAttribute="trailing" secondItem="sgh-6r-blx" secondAttribute="trailing" constant="25" id="vKL-St-xEX"/>
-                                    <constraint firstAttribute="bottom" secondItem="sgh-6r-blx" secondAttribute="bottom" constant="20" id="xEZ-ZY-Rmu"/>
-                                    <constraint firstItem="g7b-oi-dB4" firstAttribute="centerX" secondItem="MWv-sC-8xJ" secondAttribute="centerX" id="zPe-lk-eg9"/>
+                                    <constraint firstAttribute="width" constant="97" id="6xf-Z4-Wp0"/>
+                                    <constraint firstAttribute="height" constant="30" id="I3N-O8-2wi"/>
                                 </constraints>
-                            </scrollView>
+                                <state key="normal" title="Eye In the Sky"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktn-ez-Gu8">
+                                <rect key="frame" x="83" y="278" width="154" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tfG-8p-CP2"/>
+                                </constraints>
+                                <state key="normal" title="Create Rover Postcard"/>
+                                <connections>
+                                    <segue destination="U4g-r3-PHb" kind="show" id="tjM-sx-CvU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.08235294118" green="0.1137254902" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="MWv-sC-8xJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="49S-N9-4bH"/>
-                            <constraint firstItem="MWv-sC-8xJ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="7GF-DL-5Xg"/>
-                            <constraint firstAttribute="trailing" secondItem="MWv-sC-8xJ" secondAttribute="trailing" id="gfw-8a-GkQ"/>
-                            <constraint firstItem="MWv-sC-8xJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n5o-j4-Y1x"/>
-                            <constraint firstItem="MWv-sC-8xJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="rFe-Fg-jXm"/>
+                            <constraint firstItem="q2s-95-oON" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L9g-U2-vlg"/>
+                            <constraint firstItem="q2s-95-oON" firstAttribute="top" secondItem="Ktn-ez-Gu8" secondAttribute="bottom" constant="40" id="QCo-tj-s7Q"/>
+                            <constraint firstItem="Ktn-ez-Gu8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="214" id="Zwy-vg-7od"/>
+                            <constraint firstItem="Ktn-ez-Gu8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xir-lv-v0s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m26-2f-OZt"/>
-                    <connections>
-                        <outlet property="activityIndicator" destination="g7b-oi-dB4" id="3rJ-HP-x84"/>
-                        <outlet property="createRoverPostcardBtn" destination="Ktn-ez-Gu8" id="Z4Z-bd-LuL"/>
-                        <outlet property="eyeInTheSkyBtn" destination="q2s-95-oON" id="hBb-R6-5t3"/>
-                        <outlet property="spaceImageView" destination="sgh-6r-blx" id="4lw-nj-SJb"/>
-                        <segue destination="J9j-6e-X3b" kind="show" identifier="showEarthImage" id="9Xg-2g-eZ0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967.5" y="119.36619718309859"/>
-        </scene>
-        <!--Earth Image View Controller-->
-        <scene sceneID="A6Q-PY-Le4">
-            <objects>
-                <viewController id="J9j-6e-X3b" customClass="EarthImageViewController" customModule="NASApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zgu-0b-Tga"/>
-                        <viewControllerLayoutGuide type="bottom" id="a4S-vm-wKy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fb3-XK-eSi">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J9B-lZ-wBZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="512"/>
-                            </imageView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="yi4-wy-JjT">
-                                <rect key="frame" x="142" y="234" width="37" height="37"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.08235294118" green="0.1137254902" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="J9B-lZ-wBZ" secondAttribute="trailing" id="SbY-zx-K6d"/>
-                            <constraint firstItem="J9B-lZ-wBZ" firstAttribute="leading" secondItem="fb3-XK-eSi" secondAttribute="leading" id="bAG-UU-B0Z"/>
-                            <constraint firstItem="yi4-wy-JjT" firstAttribute="centerX" secondItem="fb3-XK-eSi" secondAttribute="centerX" id="cNi-46-B6J"/>
-                            <constraint firstItem="a4S-vm-wKy" firstAttribute="top" secondItem="J9B-lZ-wBZ" secondAttribute="bottom" constant="-8" id="iiJ-Rd-1lZ"/>
-                            <constraint firstItem="J9B-lZ-wBZ" firstAttribute="top" secondItem="zgu-0b-Tga" secondAttribute="bottom" id="u5z-yS-g5f"/>
-                            <constraint firstItem="yi4-wy-JjT" firstAttribute="centerY" secondItem="fb3-XK-eSi" secondAttribute="centerY" id="uod-gj-aYR"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="activityIndicator" destination="yi4-wy-JjT" id="njS-Tc-E6P"/>
-                        <outlet property="imageView" destination="J9B-lZ-wBZ" id="D4K-IH-Tdx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YaM-Eu-iFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1732.5" y="842.95774647887322"/>
         </scene>
         <!--Rover Image View Controller-->
         <scene sceneID="1NR-ua-u3n">
             <objects>
                 <collectionViewController id="U4g-r3-PHb" customClass="RoverImageViewController" customModule="NASApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jyg-ML-cKk">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.08235294118" green="0.1137254902" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hRi-3i-GlL">
@@ -171,7 +70,7 @@
                             <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="Foc-KW-bQp">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            <rect key="frame" x="0.0" y="-64" width="320" height="568"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <cells>
@@ -222,11 +121,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2AN-2x-6Mj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kyR-yn-CC7">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQI-p0-ae0">
-                                <rect key="frame" x="20" y="8" width="280" height="200"/>
+                                <rect key="frame" x="20" y="72" width="280" height="200"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QPt-bC-8PW">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
@@ -242,33 +141,29 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rf-2F-Hoe">
-                                <rect key="frame" x="187" y="466" width="117" height="30"/>
+                                <rect key="frame" x="183" y="530" width="121" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="g5E-vP-EWo"/>
                                     <constraint firstAttribute="height" constant="30" id="zaP-mV-vP5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Email to a friend">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Email to a friend"/>
                                 <connections>
                                     <action selector="emailPostcard:" destination="CO6-wC-mMZ" eventType="touchUpInside" id="p3L-Ug-bUE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUC-7P-agy">
-                                <rect key="frame" x="16" y="466" width="128" height="30"/>
+                                <rect key="frame" x="16" y="530" width="121" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Keh-tO-BLG"/>
+                                    <constraint firstAttribute="width" constant="121" id="lPH-rl-WKz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Add text to image">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Add text to image"/>
                                 <connections>
                                     <action selector="addText:" destination="CO6-wC-mMZ" eventType="touchUpInside" id="YKL-Mq-cEQ"/>
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ey4-bX-gaA">
-                                <rect key="frame" x="20" y="216" width="280" height="250"/>
+                                <rect key="frame" x="20" y="280" width="280" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcard Preview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBW-JE-4yy">
                                         <rect key="frame" x="77.5" y="0.0" width="133" height="21"/>
@@ -327,10 +222,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e2G-sY-GnS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="sVQ-N6-jW2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVQ-N6-jW2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.08235294118" green="0.1137254902" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -342,7 +236,4 @@
             <point key="canvasLocation" x="208" y="120"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Space1" width="375" height="667"/>
-    </resources>
 </document>
